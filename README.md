@@ -2,6 +2,12 @@
 
 ## Protocol frame structure
 
+SYNC1 | SYNC2 | LENGTH | MODE | ID | PAYLOAD | CHECK1 | CHECK2|
+|----------|----------|----------|----------|----------|----------|----------|----------|
+U1 | U1 | U1 | U1 | U1 | BYTE[LENGTH] | U1 | U1 |
+0xBB | 0x55 | 0 … 128 | 0 … 255 | 1 … 255 | — | 0 … 255 | 0 … 255 |
+
+
 ## Checksum
 The checksum algorithm used is the Fletcher-16.
 
