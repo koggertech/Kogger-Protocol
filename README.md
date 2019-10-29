@@ -4,13 +4,16 @@
 
 ## Checksum
 The checksum algorithm used is the Fletcher-16.
+
 Example source code for calculating the checksum:
+```
 uint8_t CHECK1 = 0;
 uint8_t CHECK2 = 0;
 void CheckSumUpdate(uint8_t byte) {
 	CHECK1 += byte;
 	CHECK2 += CHECK1;
 }
+```
 
 ## Number Formats
 - Multi-byte values are ordered in Little Endian format
