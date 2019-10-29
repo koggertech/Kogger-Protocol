@@ -13,6 +13,6 @@ void CheckSumUpdate(uint8_t byte) {
 }
 
 ## Number Formats
-All multi-byte values are ordered in Little Endian format.
-All floating point values are transmitted in IEEE754 single or double precision. 
-All bit-field in LSB format.
+- Multi-byte values are ordered in Little Endian format
+- Floating point values are transmitted in IEEE754 single or double precision
+- bit-field in LSB format
