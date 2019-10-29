@@ -1,1 +1,2 @@
-Open Serial Protocol
+Open Serial Binary Protocol (SBP) specification
+
