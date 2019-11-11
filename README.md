@@ -12,8 +12,8 @@ Name | Bits | Description
 |----------|----------|----------|
 TYPE | 0:2 bit | Field defines the type and purpose of the data
 VERSION | 3:5 bit | Field defines the data version
-MARK | 6 bit | Set by the host and reset when the device reboots. Used only for direction of device-host
-RESPONSE | 7 bit | Request response to the command. Used only for direction of host-device
+MARK | 6 bit | Once device is switched on, this flag is always in reset state (ZERO). It can be set to active state (ONE) by the host (see the CMD_MARK command) and the slave device keeps the flag in active state in every frame until hardware reset occurs or is reset by the host. Therefore the host monitors the device's actual settings.
+RESPONSE | 7 bit | HOST → DEVICE: Set the flag to active state (ONE) in order to get the result of processing the command. The flag doesn't affect the response if one is provided by the TYPE field. DEVICE → HOST: The flag is in reset state (ZERO) by default. Payload goes according to the command specification. If flag is set, the payload contains the result of command processing (see CMD_RESP command).
 
 ### TYPE of MODE
 TYPE | Value | Description
