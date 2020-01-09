@@ -7,6 +7,12 @@ SYNC1 | SYNC2 | ROUTE | MODE | ID | LENGTH | PAYLOAD | CHECK1 | CHECK2|
 U1 | U1 | U1 | U1 | U1 | U1 | BYTE[LENGTH] | U1 | U1 |
 0xBB | 0x55 | BITFIELD | BITFIELD |  1 … 255 |  0 … 128 | BYTEARRAY | 0 … 0xFF | 0 … 0xFF |
 
+### ROUTE
+Name | Bits | Description
+|----------|----------|----------|
+DEV_ADDRESS | 0:3 bit | Device address. Default address is 0x0. Broadcast address is 0xF.
+RESERVED | 2 bit | Reserved
+
 ### MODE
 Name | Bits | Description
 |----------|----------|----------|
