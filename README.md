@@ -10,7 +10,7 @@ U1 | U1 | U1 | U1 | U1 | U1 | BYTE[LENGTH] | U1 | U1 |
 ### ROUTE
 Name | Bits | Description
 |----------|----------|----------|
-DEV_ADDRESS | 0:3 bit | Device address. Default address is 0x0. Broadcast address is 0xF.
+DEV_ADDRESS | 0:3 bit | Device address. Default and broadcast address is 0x0.
 RESERVED | 2 bit | Reserved
 
 ### MODE
